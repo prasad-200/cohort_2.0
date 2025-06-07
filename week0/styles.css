@@ -7,7 +7,7 @@
     display:flex;
     justify-content:space-between;
     padding:15px 60px;
-    height:40px;
+    height:35px;
     border-bottom:1px solid grey;
     box-shadow:0px 3px 4px grey;
 
@@ -21,9 +21,12 @@
 
 .navbar .buttons .auth{
     font-size:15px;
+    border-radius:3px;
+    border:0.5px solid #666;
 }
 .navbar .buttons .auth:hover{
     cursor:pointer;
+    background-color:cyan;
 }
 .image img{
     display:block;
@@ -53,6 +56,8 @@
     margin-bottom:60px;
     border:0px;
     border-radius:5px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 .info .signup:hover{
