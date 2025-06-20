@@ -19,19 +19,15 @@ class Todolist {
       this.todolist.push(str);
     }
     remove(n){
-      for(let i=n;i<this.todolist.length;i++){
-              this.todolist[i]=this.todolist[i+1];
-              if(i==this.todolist.length-1){
-                this.todolist.pop();
-              }
+      if(n>=0 && n<this.todolist.length){
+        this.todolist.splice(n,1);
       }
     }
 
     update(n,str){
-      if(n>this.todolist.length-1){
-              return this.todolist;
+      if(n>=0 && n<this.todolist.length){
+             this.todolist[n]=str;
         }
-        this.todolist[n]=str;
     }
     
     get(n){
